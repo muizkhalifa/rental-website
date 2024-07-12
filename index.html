@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RENTALS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b45544067d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/rent-house-logo.png" alt="" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">Buy a Business</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <a href="" class="hero-btn">Sell a Business</a>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <div class="main-text">
+        <img src="images/house.png" class="main-img" />
+        <div class="text-box">
+          <h1>
+            A Better Way To <br />
+            Buy And Sell <br />A Business
+          </h1>
+          <p>
+            Rental is an online platform that gives you <br />
+            all the best tools to buy or sell a business
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- javascript for toggle menu for mobile  -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

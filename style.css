@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: #f1e9e9;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  padding-right: 15%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "poppins";
+}
+nav img {
+  width: 80px;
+  background: #f1e9e9;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+  position: relative;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f44336;
+}
+.hero-btn {
+  padding: 7px 35px;
+  display: inline-block;
+  text-decoration: none;
+  color: #f44336;
+  border: 2px solid #f44336;
+  border-radius: 20px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background: #f44336;
+  border: 2px solid #f44336;
+  transition: 1s;
+  color: aliceblue;
+}
+.main-text {
+  display: flex;
+  position: relative;
+  background: #f44336;
+  width: 80%;
+  height: 600px;
+  border-radius: 20px;
+  margin: auto;
+}
+.text-box {
+  padding: 40px 90px;
+  color: #f1e9e9;
+  font-family: "poppins";
+}
+.text-box h1 {
+  font-size: 70px;
+  text-align: left;
+}
+.main-text img {
+  position: absolute;
+  right: 0;
+  padding-top: 95px;
+  border-bottom-right-radius: 20px;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 1460px) {
+  .main-text img {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    bottom: 0;
+    right: 0;
+  }
+  .text-box {
+    padding: 20px 20px;
+  }
+  .text-box h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text-box {
+    padding: 20px 20px;
+  }
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .main-text img {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    bottom: 0px;
+  }
+  /* .nav-links ul li {
+    display: block;
+  } */
+  .nav-links {
+    position: fixed;
+    background: #f1e9e9;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #f44336;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  nav img {
+    width: 40px;
+    background: #f1e9e9;
+  }
+  .hero-btn {
+    padding: 1px 5px;
+    color: #f1e9e9;
+    border: 2px solid #f44336;
+    border-radius: 10px;
+    background: #f44336;
+  }
+}
